@@ -1,13 +1,18 @@
 {
-  "name": "module",
-  "title": "New Module",
-  "description": "",
-  "version": "This is auto replaced",
+  "name": "chatgifs",
+  "title": "Chat GIFs",
+  "description": "This module creates GIPHY integration allowing the user to search and send GIFs in chat",
+  "version": "1.0.0",
   "library": "false",
   "manifestPlusVersion": "1.0.0",
-  "minimumCoreVersion": "0.7.9",
-  "compatibleCoreVersion": "0.7.9",
+  "minimumCoreVersion": "0.8.5",
+  "compatibleCoreVersion": "0.8.6",
   "authors": [
+    {
+      "name": "YourFavouriteOreo",
+      "url":"https://github.com/YourFavouriteOreo",
+      "discord":"YourFavouriteOreo#6798"
+    },
     {
       "name": "Blackcloud",
       "url": "https://github.com/Blackcloud010",

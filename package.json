@@ -1,7 +1,7 @@
 {
-  "name": "placeholder",
+  "name": "chat-gifs",
   "version": "1.0.0",
-  "description": "Placeholder.",
+  "description": "",
   "private": true,
   "scripts": {
     "build": "webpack",
@@ -9,7 +9,7 @@
     "start": "webpack serve --hot"
   },
   "repository": {},
-  "author": "Blackcloud010",
+  "author": "YourFavouriteOreo",
   "license": "MIT",
   "devDependencies": {
     "@league-of-foundry-developers/foundry-vtt-types": "^0.7.9-5",
@@ -40,5 +40,8 @@
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-import-glob-loader": "^1.6.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }

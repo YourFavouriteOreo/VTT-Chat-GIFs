@@ -23,7 +23,7 @@ module.exports = (env) => {
     const isDevelopment = environment.mode === "development";
 
     const config = {
-        entry: "./src/module.ts",
+        entry: "./src/chatgifs.ts",
         watch: environment.watch,
         devtool: "inline-source-map",
         stats: "minimal",
@@ -75,6 +75,10 @@ module.exports = (env) => {
                         },
                     ],
                 },
+                {
+                    test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                    type: 'asset/resource',
+                  },
                 {
                     test: /\.scss$/,
                     use: [
