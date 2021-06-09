@@ -44,7 +44,7 @@ function LightenDarkenColor(col, amt) {
 Hooks.on("renderChatLog", (_app, html, _options) => {
   const chatControls = html.find("#chat-controls")[0];
   const chatForm = html.find("#chat-form")[0];
-  chatForm.classList += "relative";
+  chatForm.classList += "relative ";
   
   const gifSearch = document.createElement("div");
   gifSearch.id = "gifSearch";

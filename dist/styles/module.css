@@ -6,7 +6,7 @@
   overflow: hidden;
   overflow-y: scroll;
   max-height: 300px;
-  bottom: 30px;
+  bottom: 108px;
 }
 
 .giphy-container {
@@ -77,6 +77,10 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.relative {
+  position:relative
 }
 
 #gifButton {

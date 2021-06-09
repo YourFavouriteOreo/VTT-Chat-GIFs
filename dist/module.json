@@ -46,9 +46,9 @@
       "path": "languages/en.json"
     }
   ],
-  "url": "This is auto replaced",
-  "manifest": "This is auto replaced",
-  "download": "This is auto replaced",
+  "url": "https://github.com/YourFavouriteOreo/VTT-Chat-GIFs",
+  "manifest": "https://raw.githubusercontent.com/YourFavouriteOreo/VTT-Chat-GIFs/master/dist/module.json",
+  "download": "https://github.com/YourFavouriteOreo/VTT-Chat-GIFs/releases/download/1.0.0/chatgifs.zip",
   "media": [
     {
       "type": "icon",
