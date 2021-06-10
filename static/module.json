@@ -2,9 +2,9 @@
   "name": "chatgifs",
   "title": "Chat GIFs",
   "description": "This module creates GIPHY integration allowing the user to search and send GIFs in chat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "library": "false",
-  "manifestPlusVersion": "1.0.0",
+  "manifestPlusVersion": "1.0.1",
   "minimumCoreVersion": "0.8.5",
   "compatibleCoreVersion": "0.8.6",
   "authors": [
@@ -48,7 +48,7 @@
   ],
   "url": "https://github.com/YourFavouriteOreo/VTT-Chat-GIFs",
   "manifest": "https://raw.githubusercontent.com/YourFavouriteOreo/VTT-Chat-GIFs/master/dist/module.json",
-  "download": "https://github.com/YourFavouriteOreo/VTT-Chat-GIFs/releases/download/1.0.0/chatgifs.zip",
+  "download": "https://github.com/YourFavouriteOreo/VTT-Chat-GIFs/releases/download/1.0.1/chatgifs.zip",
   "media": [
     {
       "type": "icon",
