@@ -75,7 +75,7 @@ export default class GiphySearchBar {
       console.log("search functionality");
       this.source.cancel();
       this.axios
-        .get("http://api.giphy.com/v1/gifs/search", {
+        .get("https://api.giphy.com/v1/gifs/search", {
           params: {
             q: inputText,
             api_key: this.apiKey,
