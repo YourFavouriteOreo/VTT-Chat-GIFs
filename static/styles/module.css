@@ -1,12 +1,14 @@
 #gifSearch {
-  right: 3px;
-  width: 100%;
+  right: 13px;
+  z-index: 51;
+  width: 90%;
   position: absolute;
   padding: 0 10px;
   overflow: hidden;
   overflow-y: scroll;
   max-height: 300px;
-  bottom: 108px;
+  bottom: 271px;
+  border-radius: 10px;
 }
 
 .giphy-container {
