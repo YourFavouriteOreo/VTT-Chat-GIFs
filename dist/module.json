@@ -5,12 +5,12 @@
   "version": "1.0.2",
   "library": "false",
   "manifestPlusVersion": "1.0.2",
-  "minimumCoreVersion": 8.2, // V9 compatible minimum field
-  "compatibleCoreVersion": "10", // V9 compatible verified field
+  "minimumCoreVersion": "8.2",
+  "compatibleCoreVersion": "10",
   "compatibility": {
     "minimum": 8.2,
     "verified": 10
-  }
+  },
   "authors": [
     {
       "name": "YourFavouriteOreo",
@@ -27,11 +27,10 @@
       "url": "https://github.com/League-of-Foundry-Developers",
       "discord": "discordID#0001"
     }
-
+  ],
   "esmodules": [
     "module.js"
   ],
-
   "styles": [
     "/styles/module.css"
   ],
