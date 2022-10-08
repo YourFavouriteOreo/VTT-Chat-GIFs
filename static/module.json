@@ -2,11 +2,15 @@
   "name": "chatgifs",
   "title": "Chat GIFs",
   "description": "This module creates GIPHY integration allowing the user to search and send GIFs in chat",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "library": "false",
-  "manifestPlusVersion": "1.0.2",
-  "minimumCoreVersion": "0.8.2",
-  "compatibleCoreVersion": "0.8.7",
+  "manifestPlusVersion": "1.0.4",
+  "minimumCoreVersion": "8.2",
+  "compatibleCoreVersion": "10",
+  "compatibility": {
+    "minimum": 8.2,
+    "verified": 10
+  },
   "authors": [
     {
       "name": "YourFavouriteOreo",
@@ -24,17 +28,8 @@
       "discord": "discordID#0001"
     }
   ],
-  "dependencies": [
-
-  ],
-  "conflicts": [
-
-  ],
   "esmodules": [
     "module.js"
-  ],
-  "scripts": [
-
   ],
   "styles": [
     "/styles/module.css"
