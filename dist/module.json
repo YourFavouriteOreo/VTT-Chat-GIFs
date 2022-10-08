@@ -4,7 +4,7 @@
   "description": "This module creates GIPHY integration allowing the user to search and send GIFs in chat",
   "version": "1.0.2",
   "library": "false",
-  "manifestPlusVersion": "1.0.2",
+  "manifestPlusVersion": "1.0.4",
   "minimumCoreVersion": "8.2",
   "compatibleCoreVersion": "10",
   "compatibility": {
