@@ -13,6 +13,18 @@ Hooks.once("init", async () => {
     "=============================Chat GIFS Loading============================"
   );
 
+  game.settings.register("chatgifs", "compact-gif-button", {
+    name: "Compact GIF Button",
+    hint: "Whether or not to use the compact GIF button that's above the chat box, rather than in the chat box (default true)",
+    scope: "client",
+    config: true,
+    type: Boolean,
+    default: true,
+    onChange: () => {
+      window.location.reload();
+    }
+  })
+
   game.settings.register("chatgifs", "gif-search-background", {
     name: "Background color for gif searcher ",
     hint: "Background color in hex that will appear behind the gif searcher",
@@ -70,13 +82,27 @@ Hooks.on("renderChatLog", (_app, html, _options) => {
   gifSearch.appendChild(gifSearchResults);
   chatControls.appendChild(gifSearch);
 
-  const button = document.createElement("button");
-  button.id = "gifButton";
-  button.textContent = "GIF";
-  button.className += "optionsButton";
-  button.type = "button";
-  giphySearchBar.bind(gifSearch, button);
-  chatForm.appendChild(button)
+  if (game.settings.get("chatgifs", "compact-gif-button")) {
+    const a = document.createElement("a");
+    a.innerHTML = `<i class="fas fa-gif"></i>`;
+    a.className += "gif-button--compact";
+    a.title = "Search GIF";
+    let controlButtons: JQuery = html.find(".control-buttons");
+    if (controlButtons.length === 0) {
+      controlButtons = $(`<div class="control-buttons"></div>`);
+      controlButtons.appendTo(html.find("#chat-controls"));
+    }
+    giphySearchBar.bind(gifSearch, a);
+    controlButtons.append($(a));
+  } else {
+    const button = document.createElement("button");
+    button.id = "gifButton";
+    button.textContent = "GIF";
+    button.className += "optionsButton";
+    button.type = "button";
+    giphySearchBar.bind(gifSearch, button);
+    chatForm.appendChild(button)
+  }
 });
 
 if (process.env.NODE_ENV === "development") {
