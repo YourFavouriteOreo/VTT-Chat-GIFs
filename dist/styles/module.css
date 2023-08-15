@@ -1,5 +1,5 @@
 #gifSearch {
-  right: 13px;
+  right: 5%;
   z-index: 51;
   width: 90%;
   position: absolute;
@@ -7,8 +7,8 @@
   overflow: hidden;
   overflow-y: scroll;
   max-height: 300px;
-  bottom: 271px;
-  border-radius: 10px;
+  bottom: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 .giphy-container {
@@ -34,7 +34,7 @@
   display: block;
 }
 
-.hidden {
+.gif-hidden {
   display: none;
 }
 
@@ -90,12 +90,37 @@
   bottom: 8px;
   left: 5px;
   height: 1.75rem;
-  width: 1.75rem;
+  width: auto;
   line-height: 1.5;
   font-size: 10px;
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.gif-button--compact {
+  padding-right: 1.8em;
+}
+
+#chat-controls {
+  position: relative;
+}
+
+.chat-sidebar #chat-controls .roll-type-select {
+  flex-basis: auto;
+  width: 50%;
+  flex-grow: 7;
+}
+
+.chat-sidebar #chat-controls .control-buttons {
+  flex: unset;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Make compact gif button compatible with df-chat-enhance replaced roll buttons */
+#chat-controls:has(.gif-button--compact) #dfcp-rt-buttons :is(.chat-archive, .export-log, .chat-flush) {
+  display: none;
 }
 
 #gifSearch > input::placeholder {

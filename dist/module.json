@@ -5,11 +5,11 @@
   "version": "1.0.4",
   "library": "false",
   "manifestPlusVersion": "1.0.4",
-  "minimumCoreVersion": "8.2",
-  "compatibleCoreVersion": "10",
+  "minimumCoreVersion": "11",
+  "compatibleCoreVersion": "11",
   "compatibility": {
-    "minimum": 8.2,
-    "verified": 10
+    "minimum": 11,
+    "verified": 11
   },
   "authors": [
     {
