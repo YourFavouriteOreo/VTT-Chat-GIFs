@@ -14,7 +14,7 @@ export default class GiphySearchBar {
   constructor(element: HTMLElement, gifButtonElement: HTMLButtonElement) {
     this.element = element;
     this.gifButtonElement = gifButtonElement;
-    this.apiKey = "";
+    this.apiKey = "D4p2zMgMNgUEF8nt9pXd8KskWCFAwNZc";
     this.cancelToken = this.axios.CancelToken;
     // @ts-ignore
     this.source = this.cancelToken.source();
