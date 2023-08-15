@@ -28,10 +28,10 @@ Hooks.once("init", async () => {
   game.settings.register("chatgifs", "gif-search-background", {
     name: "Background color for gif searcher ",
     hint: "Background color in hex that will appear behind the gif searcher",
-    scope: "world",
+    scope: "client",
     config: true,
     type: String,
-    default: "d2d2c6",
+    default: "252529",
     onChange: (value) => {
       if (isHexColor(value)) {
         window.location.reload();
