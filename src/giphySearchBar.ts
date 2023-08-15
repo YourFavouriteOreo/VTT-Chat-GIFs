@@ -37,6 +37,7 @@ export default class GiphySearchBar {
     if (this.visibility) {
       this.element.classList.remove("hidden");
       this.element.classList.add("slide-in-bottom");
+      (this.element.firstElementChild as HTMLTextAreaElement).focus();
     } else {
       this.element.classList.remove("slide-in-bottom");
       this.element.classList.add("hidden");
