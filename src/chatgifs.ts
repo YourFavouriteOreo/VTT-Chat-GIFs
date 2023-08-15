@@ -65,7 +65,7 @@ Hooks.on("renderChatLog", (_app, html, _options) => {
     "gif-search-background"
   )}`;
 
-  gifSearch.classList.add("hidden");
+  gifSearch.classList.add("gif-hidden");
   const gifSearchBar = document.createElement("input");
   gifSearchBar.style.background = `#${LightenDarkenColor(
     game.settings.get("chatgifs", "gif-search-background"),

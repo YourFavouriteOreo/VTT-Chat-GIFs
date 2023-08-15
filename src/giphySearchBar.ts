@@ -35,12 +35,12 @@ export default class GiphySearchBar {
   toggleVisibility = () => {
     this.visibility = !this.visibility;
     if (this.visibility) {
-      this.element.classList.remove("hidden");
+      this.element.classList.remove("gif-hidden");
       this.element.classList.add("slide-in-bottom");
       (this.element.firstElementChild as HTMLTextAreaElement).focus();
     } else {
       this.element.classList.remove("slide-in-bottom");
-      this.element.classList.add("hidden");
+      this.element.classList.add("gif-hidden");
       const input = this.element.firstElementChild as HTMLInputElement;
       input.value = "";
       const searchResults = this.element.lastElementChild as HTMLDivElement;
