@@ -6,10 +6,10 @@
   "library": "false",
   "manifestPlusVersion": "1.0.4",
   "minimumCoreVersion": "11",
-  "compatibleCoreVersion": "11",
+  "compatibleCoreVersion": "12",
   "compatibility": {
     "minimum": 11,
-    "verified": 11
+    "verified": 12
   },
   "authors": [
     {
